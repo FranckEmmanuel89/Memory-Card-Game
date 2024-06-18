@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(Images/abstract-gradient-neon-lights.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: white;
+  font-weight: bolder;
+}
+
+.memory-game {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  position: relative;
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(229, 217, 240);
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+.back-face:hover {
+  opacity: 0.9;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.memory-card.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.end-game {
+  animation: endGameEffect 1s forwards;
+}
+
+@keyframes endGameEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+p {
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.flip-button-container {
+   display: flex;
+   background-color: rgb(208, 168, 245);
+   width: 390px;
+   height: 60px;
+   margin-top: 30px;
+   border-radius: 5px;
+   align-items: center;
+   justify-content: space-around;
+}
+
+#flip-container {
+   display: flex;
+   align-items: center;
+   background-color: white;
+   width: 100px;
+   height: 40px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+button {
+   padding: 11px 50px;
+   cursor: pointer;
+   background-color: rgb(48, 8, 72);
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 5px;
+ }
+ 
+ button:hover {
+    opacity: 0.8;
+ }
