@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Card Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="Images/favicon.ico">
 </head>
 <body>
     <section>
-        <h1>Memory Card Game : Have fun 😊</h1>
+        <h1>Memory Card Game: Have fun 😊</h1>
         <section class="memory-game">
             <div class="memory-card" data-image="1">
                 <img class="front-face" src="Images/img-1.png" alt="image card">
@@ -73,17 +75,34 @@
             <div class="memory-card" data-image="8">
                 <img class="front-face" src="Images/img-8.png" alt="image card">
                 <img class="back-face" src="Images/icons8-point-d'interrogation-100.png" alt="image card">
-            </div>
-
+            </div>   
+        </section>
     </section>
-    <div class="flip-button-container" >      
-        <button id="replay-button">
-            REPLAY
-        </button> 
+    <div class="flip-time-score-container" >      
+       
         <div id="flip-container">
-            Flips:
+            Flips: 0
+        </div>
+        <div Id="time-container">
+            00:00
+        </div>
+        <div id="score-container">
+            Score: 0/8
         </div>
     </div>
-<script src="script.js"></script>    
-</body>
+    <button id="replay-button">
+        REPLAY
+    </button> 
+
+    <div class="girl-image-container">
+        <img class="girl-image" src="Images/cute cartoon personality fun2.png" alt="girl image" srcset="">
+    </div>
+
+    <div class="boy-image-container">
+        <img class="boy-image" src="Images/cute cartoon personality fun.png" alt="boy image">
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body> 
 </html>

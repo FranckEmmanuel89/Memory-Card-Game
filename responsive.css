@@ -1,0 +1,218 @@
+@media (max-width: 380px) {
+    .memory-game {
+        height: 320px;
+        width: 320px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+    .girl-image-container {
+        visibility: hidden;
+    }
+
+    .boy-image-container {
+        visibility: hidden;
+        bottom: 20px;
+        margin: auto;
+        left: auto;
+        right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boy-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .flip-time-score-container {
+        width: 330px;
+     }
+
+    h1 {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (min-width: 380.1px) and (max-width: 480px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .girl-image-container {
+        visibility: hidden;
+    }
+
+    .boy-image-container {
+        visibility: hidden;
+        bottom: 20px;
+        margin: auto;
+        left: auto;
+        right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boy-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .memory-game {
+        height: 350px;
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 23px;
+
+      }
+      
+      .flip-time-score-container {
+         width: 370px;
+      }
+      
+      #flip-container,
+      #time-container,
+      #score-container {
+         padding-left: 0px;
+         padding-right: 0px;
+      }
+      
+      button {
+         padding: 11px 30px;
+       }
+}
+
+@media (min-width: 480.1px) and (max-width: 768px) {
+.memory-game {
+    height: 370px;
+    width: 370px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+ .girl-image-container {
+  visibility: hidden;
+  position: absolute;
+  left: 50px;
+ }
+
+
+ .girl-image {
+  width: 80px;
+  height: 120px;
+ }
+
+ .boy-image-container {
+  position: absolute;
+  right: 30px;
+  visibility: hidden;
+ }
+
+ .boy-image {
+  width: 110px;
+  height: 110px;
+ }
+
+}
+
+@media (min-width: 768.1px) and (max-width: 900px) {
+    .memory-game {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .girl-image-container {
+        visibility: visible;
+        position: absolute;
+        left: 7%;
+       }
+
+    .boy-image-container {
+        position: absolute;
+        right: 7%;
+        visibility: visible;
+       }
+
+    .boy-image {
+        width: 110px;
+        height: 110px;
+       }
+
+       .girl-image {
+        width: 110px;
+        height: 110px;
+       }
+
+}
+
+@media (min-width: 900.1px) and (max-width: 1200px) {
+    .memory-game {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 1000px;
+    }
+
+    .girl-image-container {
+        position: absolute;
+        left: 9%;
+    }
+      
+      
+    .girl-image {
+        width: 150px;
+        height: 150px;
+    }
+      
+    .boy-image-container {
+        position: absolute;
+        right: 9%;
+    }
+      
+    .boy-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1200.1px) {
+    .girl-image-container {
+        position: absolute;
+        left: 15%;
+       }
+      
+      
+       .girl-image {
+        width: 150px;
+        height: 150px;
+       }
+      
+       .boy-image-container {
+        position: absolute;
+        right: 15%;
+       }
+      
+       .boy-image {
+        width: 150px;
+        height: 150px;
+       }
+
+       .memory-game {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 1000px;
+      }
+}

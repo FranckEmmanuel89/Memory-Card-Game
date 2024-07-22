@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-image: url(Images/abstract-gradient-neon-lights.jpg);
+  background-image: url(Images/bg.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -24,7 +24,7 @@ section {
 }
 
 h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: white;
   font-weight: bolder;
 }
@@ -66,10 +66,11 @@ h1 {
   background-color: rgb(229, 217, 240);
   cursor: pointer;
   backface-visibility: hidden;
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
 .back-face:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .front-face {
@@ -96,7 +97,7 @@ h1 {
 }
 
 .end-game {
-  animation: endGameEffect 1s forwards;
+  animation: endGameEffect 1s forwards 3;
 }
 
 @keyframes endGameEffect {
@@ -111,6 +112,7 @@ h1 {
   }
 }
 
+
 p {
   font-size: x-large;
   color: rgb(255, 255, 255);
@@ -118,18 +120,20 @@ p {
   margin-bottom: 10px;
 }
 
-.flip-button-container {
+.flip-time-score-container {
    display: flex;
-   background-color: rgb(208, 168, 245);
+   background-color: rgb(168, 212, 245);
    width: 390px;
    height: 60px;
-   margin-top: 30px;
+   margin-top: 20px;
    border-radius: 5px;
    align-items: center;
    justify-content: space-around;
 }
 
-#flip-container {
+#flip-container,
+#time-container,
+#score-container {
    display: flex;
    align-items: center;
    background-color: white;
@@ -139,6 +143,7 @@ p {
    padding-right: 10px;
    border-radius: 5px;
    font-weight: bold;
+   justify-content: center;
 }
 
 button {
@@ -148,8 +153,31 @@ button {
    color: white;
    font-family: Arial, Helvetica, sans-serif;
    border-radius: 5px;
+   margin-top: 40px;
+   border: 1px solid white;
  }
  
  button:hover {
     opacity: 0.8;
+ }
+
+ .girl-image-container {
+  position: absolute;
+  left: 12%;
+ }
+
+
+ .girl-image {
+  width: 130px;
+  height: 130px;
+ }
+
+ .boy-image-container {
+  position: absolute;
+  right: 12%;
+ }
+
+ .boy-image {
+  width: 130px;
+  height: 130px;
  }
